@@ -1,5 +1,5 @@
 
-# TDD Lab — Design Your Own Domain Object
+# TDD Lab — Design Your Own Object
 
 In this lab you will design and build your own Java class from scratch and write tests for it using everything you learned in class — including JUnit 5 and JaCoCo for coverage reporting.
 
