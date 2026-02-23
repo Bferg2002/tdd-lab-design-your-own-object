@@ -9,25 +9,6 @@ An example is provided in the **object.example** package — see `Person.java` a
 
 ---
 
-## Prerequisites
-
-Before you start make sure you have the following installed on your machine:
-
-- Java 23
-- Maven 3.9+
-- IntelliJ IDEA (recommended)
-- Git
-
-Not sure what version you have? Run these in your terminal:
-
-```bash
-java -version
-mvn -version
-git --version
-```
-
----
-
 ## How To Get Started
 
 ### Step 1 — Fork This Repo
@@ -66,12 +47,6 @@ src/main/java/object/firstnamelastname/YourClassName.java
 src/test/java/object/firstnamelastname/YourClassNameTest.java
 ```
 
-Make sure the package declaration at the top of both files matches your folder:
-
-```java
-package object.firstnamelastname;
-```
-
 ### Step 5 — Do Not Touch the Example Package
 
 > **Do not modify anything inside `object.example` — this is the reference example only.**
@@ -91,12 +66,6 @@ You should see output that ends with:
 ```
 BUILD SUCCESS
 ```
-
-If you see `BUILD FAILURE` check that:
-- Your package declaration matches your folder name exactly
-- You are running Maven from the root of the project where the `pom.xml` lives
-- Your Java version matches — run `mvn -version` to check
-
 ---
 
 ## Viewing Your Coverage Report
@@ -133,20 +102,8 @@ Your tests must cover:
 
 ### Step 1 — Commit and Push Your Work
 
-Commit your changes and push to your forked repo using a clear commit message:
-
-```
-Add firstnamelastname TDD Lab submission
-```
-
 ### Step 2 — Open a Pull Request
 
-Go to your forked repo on GitHub and open a Pull Request back to the class repo.
-
-Use this format for your PR title:
-```
-TDD Lab — FirstName LastName
-```
 
 In the PR description include:
 - What object you chose and why
@@ -159,35 +116,17 @@ In the PR description include:
 
 - Only add files inside **your own package** — never modify anyone else's package
 - Do not modify the `object.example` package
-- One Pull Request per student — do not open multiple PRs
-
----
-
-## Need Help?
-
-Ask yourself these questions before reaching out:
-
-- Does `mvn -version` show Java 23?
-- Does your package declaration match your folder name exactly?
-- Are you running `mvn clean test` from the root of the project?
-- What is your JaCoCo report showing as red?
-
-If you've worked through those and you're still stuck — post your question in the class Slack channel with your error message and a screenshot of your JaCoCo report.
 
 ---
 
 ## Grading Checklist
 
-Your instructor will check for:
-
 - At least 5 fields with getters and setters
 - At least 2 custom methods with meaningful behavior
 - Tests for constructor, getters, setters, and all custom methods
 - At least one validation test using `assertThrows`
-- AAA pattern visible in all tests
 - JaCoCo coverage at 80% or above
 - Correct package name — all lowercase, no dashes
 - Pull Request open with correct title and description
 
----
 
