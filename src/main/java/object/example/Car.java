@@ -11,6 +11,9 @@ public class Car {
         this.model = model;
         this.year = year;
         this.color = color;
+        if (mileage < 0) {
+            throw new IllegalArgumentException("Mileage cannot be negative");
+        }
         this.mileage = mileage;
         this.isElectric = isElectric;
     }
