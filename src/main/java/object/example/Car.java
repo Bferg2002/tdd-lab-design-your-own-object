@@ -2,13 +2,15 @@ package object.example;
 
 public class Car {
     private String model;
+    private String brand;
     private int year;
     private String color;
     private int mileage;
     private boolean isElectric;
 
-    public Car(String model, int year, String color, int mileage, boolean isElectric) {
+    public Car(String model, String brand, int year, String color, int mileage, boolean isElectric) {
         this.model = model;
+        this.brand = brand;
         this.year = year;
         this.color = color;
         if (mileage < 0) {
@@ -24,6 +26,14 @@ public class Car {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public int getYear() {
@@ -65,6 +75,7 @@ public class Car {
     public void displayCarInfo(){
         System.out.println("**********************");
         System.out.println("Model " + getModel());
+        System.out.println("Brand " + getBrand());
         System.out.println("Year: " + getYear());
         System.out.println("Color " + getColor());
         System.out.println("Mileage " + getMileage());
